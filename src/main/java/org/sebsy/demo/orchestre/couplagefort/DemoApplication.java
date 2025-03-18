@@ -10,10 +10,15 @@ public class DemoApplication {
         Violoniste violoniste = new Violoniste("La 9eme de Beethoven");
         violoniste.jouerMorceau();
 
+        System.out.println("Les batteurs : ");
+        Batteurs batteurs = new Batteurs("Je joue du Nirvana");
+        batteurs.jouerMorceau();
+
         System.out.println("L'orchestre : ");
         Orchestre orchestre = new Orchestre();
         orchestre.ajout(pianiste);
         orchestre.ajout(violoniste);
+        orchestre.ajout(batteurs);
         orchestre.jouer();
     }
 }

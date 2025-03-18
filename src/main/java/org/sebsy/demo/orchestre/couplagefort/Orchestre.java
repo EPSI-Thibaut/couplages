@@ -22,6 +22,9 @@ public class Orchestre {
             if (object instanceof Violoniste) {
                 ((Violoniste) object).jouerMorceau();
             }
+            if (object instanceof Batteurs) {
+                ((Batteurs) object).jouerMorceau();
+            }
         }
     }
 }
